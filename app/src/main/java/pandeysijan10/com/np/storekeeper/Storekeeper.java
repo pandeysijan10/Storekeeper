@@ -55,6 +55,7 @@ public class Storekeeper extends AppCompatActivity {
         db.execSQL("CREATE TABLE IF NOT EXISTS product(productname VARCHAR,amount INTEGER);");
         c=db.rawQuery("SELECT * FROM product", null);
                 if(c.getCount()==0) {
+                   //Data in Nepali language. Some translations: चाउचाउ means dry noodles,साबुन means soap,बिस्कुट means biscuit,नुन means salt,चामल means rice grains,etc. 
                     db.execSQL("INSERT INTO product VALUES('" + "वाइवाइ चाउचाउ" + "','" + "30" + "');");
                     db.execSQL("INSERT INTO product VALUES('" + "टेस्टी बिस्कुट" + "','" + "50" + "');");
                     db.execSQL("INSERT INTO product VALUES('" + "बनबन बिस्कुट" + "','" + "30" + "');");
