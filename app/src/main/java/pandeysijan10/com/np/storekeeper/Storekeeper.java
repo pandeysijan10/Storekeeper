@@ -59,10 +59,18 @@ public class Storekeeper extends AppCompatActivity {
                     db.execSQL("INSERT INTO product VALUES('" + "टेस्टी बिस्कुट" + "','" + "50" + "');");
                     db.execSQL("INSERT INTO product VALUES('" + "बनबन बिस्कुट" + "','" + "30" + "');");
                     db.execSQL("INSERT INTO product VALUES('" + "कुरकुरे" + "','" + "15" + "');");
-                    db.execSQL("INSERT INTO product VALUES('" + "कोक(सानो)" + "','" + "20" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "कोक(सानो)" + "','" + "17" + "');");
                     db.execSQL("INSERT INTO product VALUES('" + "कोक(ठुलो)" + "','" + "5" + "');");
                     db.execSQL("INSERT INTO product VALUES('" + "तोरिको तेल" + "','" + "15" + "');");
-                }
+                    db.execSQL("INSERT INTO product VALUES('" + "चामल" + "','" + "50" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "चिउरा" + "','" + "30" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "मट्टितेल" + "','" + "15" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "साबुन(लुगा धुने)" + "','" + "35" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "प्याज" + "','" + "18" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "आलु" + "','" + "12" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "नुन" + "','" + "55" + "');");
+                    db.execSQL("INSERT INTO product VALUES('" + "चियापत्ती" + "','" + "10" + "');");
+                  }
         List<String> mProductName = new ArrayList<>();
         List<Integer> mProductNumber = new ArrayList<>();
         while(c.moveToNext()){
