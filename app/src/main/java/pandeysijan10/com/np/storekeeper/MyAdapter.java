@@ -57,7 +57,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 Integer iplus = mproductnumber.get(position);
                 iplus=iplus+1;
                 mproductnumber.set(position,iplus);
-                holder.txt1.setText(mproductnumber.get(position).toString()+" बाँकी");
+                holder.txt1.setText(mproductnumber.get(position).toString()+" बाँकी");// Translation बाँकी = Left(items) 
                 Storekeeper.updatedatabase(mproduct, mproductnumber,position);
             }
         });
